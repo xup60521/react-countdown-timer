@@ -1,4 +1,5 @@
-import DesktopBg from "@/assets/images/pattern-hills.svg";
+import DesktopBg from "/pattern-hills.svg";
+import StarBackground from "/bg-stars.svg"
 import { useEffect, useState } from "react";
 import "./App.css";
 import DigitDisplay from "./components/DigitDisplay";
@@ -22,7 +23,7 @@ export default function App() {
 
     return (
         <div className="min-h-screen flex flex-col bg-gradient-to-b from-c_black_blue to-c_purple">
-            <div className="flex-grow flex flex-col items-center justify-center gap-24">
+            <div className="flex-grow flex flex-col items-center justify-center gap-24" style={{backgroundImage: `url(${StarBackground})`}}>
                 <h2 className="font-red_hat text-center px-4 text-white font-bold text-xl tracking-[0.45rem]">
                     WE'RE LAUNCHING SOON
                 </h2>
